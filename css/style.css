@@ -1,0 +1,176 @@
+/* ========== Variables ========== */
+@font-face {
+    font-family: "work sans";
+    src: url(../Fonts/WorkSans-VariableFont_wght.ttf);
+}
+:root {
+    --main-font: "work sans", sans-serif;
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+/* ========== End Variables ========== */
+
+/* ========== Global Rules ========== */
+* {
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    --o-box-sizing:border-box;
+    box-sizing: border-box;
+}
+/* html {
+    scroll-behavior: smooth;
+} */
+/* ========== End Global Rules ========== */
+
+/* ========== Components ========== */
+.section-title h2 {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+    font-family: var(--main-font);
+}
+.section-title h2 + p {
+    margin: -35px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+@media (max-width: 767px) {
+    .section-title h2 {
+        font-size: 60px;
+    }
+    .section-title h2 + p {
+        margin-top: -20px;
+    }
+}
+/* ========== End Components ========== */
+
+/* ========== Header ========== */
+header .navbar-brand {
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+header ul a.active {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+/* ========== End Header ========== */
+
+/* ========== Landing ========== */
+.landing {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 65px);
+}
+.landing .text h1 {
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 50px;
+}
+/* ========== End Landing ========== */
+
+/* ========== Features ========== */
+.features {
+    background-color: var(--section-background);
+}
+.features svg {
+    color: var(--main-color);
+}
+/* ========== End Features ========== */
+
+/* ========== Services ========== */
+.services svg {
+    color: var(--main-color);
+}
+.services .services-img {
+    position: relative;
+}
+.services .services-img::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    width: calc(100% / 4);
+    height: calc(100% + 60px);
+    top: -30px;
+    right: -30px;
+    z-index: -1;
+}
+/* ========== End Services ========== */
+
+/* ========== Portfolio ========== */
+.portfolio {
+    background-color: var(--section-background);
+}
+/* ========== End Portfolio ========== */
+
+/* ========== About ========== */
+.about .about-img {
+    position: relative;
+}
+.about .about-img::before {
+    top: -30px;
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 60px);
+    left: -30px;
+    z-index: -1;
+}
+.about .about-img::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    right: 20px;
+    top: -30px;
+    z-index: -1;
+}
+/* ========== End About ========== */
+
+/* ========== Contact ========== */
+.contact {
+    background-color: var(--section-background);
+}
+.contact .text > p {
+    color: var(--secondary-color);
+}
+.contact .text .e-mail {
+    color: var(--main-color);
+}
+.contact .social svg {
+    color: var(--secondary-color);
+}
+/* ========== End Contact ========== */
+
+/* ========== Footer ========== */
+footer {
+    background-color: var(--secondary-color);
+}
+footer span {
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+/* ========== End Footer ========== */
+
+/* ========== Animation ========== */
+#gotop {
+    position: fixed;
+    background-color: var(--main-color);
+    /* display: none; */
+    bottom: 30px;
+    left: 30px;
+}
+#gotop svg {
+    color: var(--secondary-color);
+}
+/* ========== End Animation ========== */
